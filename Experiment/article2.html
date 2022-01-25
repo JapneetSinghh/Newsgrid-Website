@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/e22d7ebee8.js" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Latest</title>
+  <style></style>
+</head>
+<body>
+  <!-- MOBILE NAV -->
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img style="width:150px" src="./image_resources/logo.png" alt=""></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    
+    <!-- <a class="current" href="index.html">Home</a>
+    <a   href="about.html">About</a> -->
+    <ul>
+      <li><a class="current" href="index.html">Home</a></li>
+      <li><a   href="about.html">About</a></li>
+    </ul>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<SCript>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }</SCript>
+  <nav id="main-nav">
+    <div class="container">
+      <img class="logo" src="./image_resources/logo.png" alt="NewsGrid">
+      <div class="social">
+       <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i> </a>
+       <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i> </a>
+       <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i> </a>
+       <a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i> </a>
+      </div>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a   href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+ <section id="article">
+   <div class="container">
+     <div class="page-container">
+       <article class="cards">
+         <img src="./image_resources/articles/ent1.jpg" alt="">
+     <h1 class="l-heading">
+      Lorem ipsum dolor sit amet.
+     </h1>
+     <div class="meta">
+       <small>
+         <i class="fas fa-user"></i>&nbsp; Written by Japneet Singh
+       </small>
+       <div class="category category-ent">&nbsp;&nbsp; Entertainment</div>
+     </div>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quam, ad distinctio ea debitis neque veritatis nulla aspernatur rerum itaque iste mollitia numquam consequatur! Cumque culpa quis cum, beatae facere aut quos corrupti, repudiandae, magnam dolor reiciendis nulla. Possimus eaque, fugiat corrupti temporibus inventore cumque consectetur eligendi aperiam mollitia facere.</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem distinctio quasi nisi sapiente libero eligendi, fuga quia cupiditate laboriosam perferendis doloremque rerum id consequuntur magni in veniam unde corrupti consectetur nemo nam accusamus ratione? Impedit omnis suscipit numquam alias rerum cumque repellendus obcaecati, provident, maxime excepturi corrupti delectus tenetur laborum soluta labore quo voluptas. Facere, fugit odit quidem debitis iure rem soluta quod eius quae ducimus itaque ipsam necessitatibus inventore minima consequatur odio quia neque velit deleniti laborum vero est ad laudantium culpa! Doloribus tempora, inventore officia quam dicta dolore veritatis perspiciatis blanditiis perferendis ut pariatur dolores nihil harum culpa.</p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi in facere reprehenderit praesentium! Quod nemo quibusdam, minima, officia corrupti neque recusandae odit dignissimos sapiente ipsa aspernatur, quisquam aliquam incidunt architecto fugit autem! Harum molestias nihil quidem repudiandae rem sit quia rerum! Suscipit molestias optio ipsam, quo nesciunt architecto sequi asperiores voluptate? Voluptatum repudiandae, eum neque sapiente dignissimos molestiae explicabo recusandae dolores cumque eaque sint soluta quisquam fuga autem enim repellendus dicta, aperiam maiores ipsum et illo quasi! Repudiandae consectetur, incidunt dolor tempore velit reiciendis voluptatibus architecto quo aliquid, soluta sint totam. Accusamus cum suscipit magni necessitatibus, enim, exercitationem sint minus commodi est tempora velit aliquid reiciendis quasi consectetur doloribus quidem! Dolores molestias ipsum eos veniam, architecto facere maxime voluptates molestiae incidunt temporibus cupiditate exercitationem, fugiat veritatis accusantium, ex quisquam voluptatem vitae explicabo? Temporibus illo aperiam tempora enim, quis similique? Rerum ut porro delectus ducimus dolores aliquid voluptas fuga accusantium distinctio!</p>
+       </article>
+       <aside id="categories" class="cards list">
+         <h2>Categories</h2>
+         <ul>
+           <li><a href="#"><i class=" fas fa-chevron-right"></i>&nbsp; Sports</a></li>
+           <li><a href="#"><i class=" fas fa-chevron-right"></i>&nbsp;Entertainment</a></li>
+           <li><a href="#"><i class=" fas fa-chevron-right"></i>&nbsp;Technology</a></li>
+           <li><a href="#"><i class=" fas fa-chevron-right"></i>&nbsp;Fashion</a></li>
+           <li><a href="#"><i class=" fas fa-chevron-right"></i>&nbsp;Shopping</a></li>
+         </ul>
+       </aside>
+       <aside class="bg-secondary cards">
+         <h2>Join The Club</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam architecto culpa! Qui, autem omnis placeat alias odio labore eveniet?</p>
+         <a href="#" class="btn btn-dark btn-block">Join Now</a>
+       </aside>
+     </div>
+   </div>
+ </section>
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+  <div class="container footer-container" >
+    <div>
+      <img src="./image_resources/logo_light.png" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nihil adipisci sint, animi natus sed? Pariatur, a consequuntur. Laboriosam, impedit.</p>
+    </div>
+    <div>
+      <h3>Email News Letter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <form action="">
+        <input type="email" placeholder="Enter Email">
+        <input type="submit" value="Subscirbe" class="btn btn-primary">
+      </form>
+    </div>
+    <div>
+      <h3>Site Links</h3>
+      <ul class="list">
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Join Our Club</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae accusamus quo molestias iusto laborum eaque facere aspernatur quia expedita cumque.</p>
+      <a href="#" class="btn btn-secondary">Join Now</a>
+    </div>
+    <div>
+      <p>
+        Copyright &copy; 2019 All Rights Reserved
+      </p>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

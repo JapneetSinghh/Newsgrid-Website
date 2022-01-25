@@ -1,0 +1,132 @@
+/* Navigation */
+#main-nav .social{
+  display: none;
+}
+#main-nav .container{
+  grid-template-columns: 1fr;
+  grid-gap:1.2rem
+}
+#main-nav ul{
+  justify-self: center;
+}
+#main-nav .logo{
+  justify-self:center;
+}
+#main-nav ul li a{
+  padding:0.5rem
+}
+#home-articles .articles-container{
+  grid-template-columns: repeat(2,1fr);
+}
+#home-articles .articles-container >*:first-child{
+  grid-template-columns:1fr;
+  grid-column: 1;
+}
+#home-articles .articles-container >*:last-child{
+  grid-template-columns:1fr;
+  grid-column: 1;
+}
+@media(max-width:710px){
+ 
+  #showcase .showcase-container h1{
+    font-size: 1.7rem;
+  }
+  #showcase .showcase-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #home-articles .articles-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #main-footer .footer-container{
+  grid-template-columns: repeat(1,1fr);
+
+  }
+  #main-footer .footer-container >*:last-child{
+    grid-column: 1;
+  }
+  #main-footer .footer-container>*{
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+  #main-footer .footer-container>*:nth-child(4){
+    border: none;
+  }
+  .page-container{
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  }
+  .page-container >*:first-child{
+    grid-row: 1;
+  }
+  .l-heading{
+    font-size: 1.6rem;
+  }
+  #main-nav{
+    display: none;
+  }
+  /* Hamburger Menu  */
+  .topnav{
+    display: block;
+   }
+  /* Style the navigation menu */
+ .topnav {
+   overflow: hidden;
+   background-color: #333;
+   position: relative;
+  
+ }
+ 
+ /* Hide the links inside the navigation menu (except for logo/home) */
+ .topnav #myLinks {
+   display: none;
+ }
+ 
+ /* Style navigation menu links */
+ .topnav a {
+   color: white;
+   padding: 14px 20px;
+   text-decoration: none;
+   font-size: 20px;
+   display: block;
+ 
+ }
+ 
+ /* Style the hamburger menu */
+ .topnav a.icon {
+   background-color:rgb(177, 0, 0);
+   display: block;
+   position: absolute;
+   
+   right: 10px;
+   top: 5px;
+ 
+ }
+ .topnav a.icon:hover{
+   background: rgb(245, 199, 199);
+   color: rgb(177, 4, 4);
+   cursor: pointer;
+ }
+ 
+ /* Add a grey background color on mouse-over */
+ 
+ 
+ /* Style the active link (or home/logo) */
+ .active {
+  background: white;
+   color: white;
+ }
+ #myLinks ul{
+   justify-self: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(224, 223, 223);
+  transition: all 1s ease-in;
+ }
+ #myLinks ul li a{
+ font-size: 16px;
+ color: black;
+ }
+ 
+}
